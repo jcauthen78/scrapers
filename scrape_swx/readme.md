@@ -1,6 +1,6 @@
 # Space Weather Monitor Setup Guide
 
-This guide will walk you through setting up a space weather monitoring script on your Raspberry Pi.
+This guide will walk you through setting up a space weather monitoring script on your Raspberry Pi. The assumption is you can SSH into your raspberry pi and have some very basic understanding of file system navigation.
 
 ## Initial Setup
 
