@@ -15,9 +15,9 @@ nano ~/swx_monitor/scrape_swx.py
 ```
 
 3. Copy & Paste the script content:
-   - Select all: `Ctrl/Cmd + A`
-   - Copy: `Ctrl/Cmd + C`
-   - Paste into the new file: `Ctrl + V`
+   - Navigate to the `scrape_swx.py` here on gitHub
+   - Highlight & copy its contents: `Ctrl/Cmd + C`
+   - Paste into the open `nano` document in your SSH window: `Ctrl + V`
 
 4. Update the `LAT` & `LON` variables near the top of the file with your location coordinates to ensure correct sunrise/sunset calculations.
 
@@ -48,15 +48,22 @@ pip install ephem pytz requests beautifulsoup4
 7b. Update the Python path in the script:
 ```bash
 nano ~/swx_monitor/scrape_swx.py
-# Delete this line:
-#!/usr/lib/python3
-# Replace with:
-#!/home/pi/swx_monitor/swx_env/bin/python3
-
-# Save and exit:
-Ctrl + X
-Y
 ```
+
+In the editor, you'll need to:
+1. Find and remove this line:
+   ```
+   #!/usr/lib/python3
+   ```
+2. Replace it with this line:
+   ```
+   #!/home/pi/swx_monitor/swx_env/bin/python3
+   ```
+3. Save and exit:
+   ```bash
+   Ctrl + X
+   Y
+   ```
 
 ## Script Setup and Testing
 
