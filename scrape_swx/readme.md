@@ -1,6 +1,6 @@
-# Space Weather Monitor Setup Guide
+# Space Weather Monitor Setup Guide for Allsky versions up to v2023.05.01_05
 
-This guide will walk you through setting up a space weather monitoring script on your Raspberry Pi. The assumption is you can SSH into your raspberry pi and have some very basic understanding of file system navigation.
+This guide will walk you through setting up a space weather monitoring script on your Raspberry Pi. The assumption is you can SSH into your raspberry pi and have some very basic understanding of file system navigation. This process has been developed to work with AllSky versions up to v2023.05.01_05. Future AllSky releases may require other methods - I willl update as needed.
 
 ## Initial Setup
 
