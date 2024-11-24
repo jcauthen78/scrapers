@@ -30,9 +30,9 @@ dateOnly = date.today() # call just standard today
 timeOnly = dtLocal.strftime("%H:%M:%S") # pull just time from D/T
 month = datetime.datetime.now().strftime("%Y-%m(%B)")
 
-temp_file = ('/home/pi/jscripts/logger/%s-log-temp_readings.csv' % month)
+temp_file = ('/home/pi/myscripts/logger/%s-log-temp_readings.csv' % month)
 temp_json = ('/home/pi/allsky/config/overlay/extra/internals.json')
-#mag_file = ('/home/pi/jscripts/logger/%s-log-mag_readings.csv' % month)
+#mag_file = ('/home/pi/myscripts/logger/%s-log-mag_readings.csv' % month)
 
 # Temperature readings from BME280
 def bme_temp_csv():
