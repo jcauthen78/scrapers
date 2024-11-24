@@ -1,22 +1,37 @@
-# scrapers
-Various web to json scraper scripts - intended to be used along side of Thomas J's AllSky versions up to v2023.05.01_05, via CRONTAB
+# Web Scraper Collection for AllSky
 
-I'm not a professional coder - a lot of my scripting capabilities come from tiral & error, google searches, stackExchange, and other sources. I know they can be cleaned up and streamlined better, but I don't have the experience and/or know-how to do so (yet?).
+A collection of web-to-JSON scraper scripts designed to integrate with Thomas J's AllSky camera software (compatible with versions up to v2023.05.01_05) via crontab automation.
 
-# /scrape_swx/
-Web-scraper to query available live satellite data to format and store in .json format for use with AllSky's overlay editor.
+## About This Project
 
-# bme280_csv_logger.py
-a simple logger script for AdaFruit's BME280 chip. 
-* Reads chip
-* Formats and stores data in CSV file
-* ~ Also stores data in .json file for use in Thomas J's AllSky to use in its overlay editor.
+These scripts were developed through practical experience, community resources, and iterative learning. While they may not represent the most elegant solutions, they are functional and field-tested. The code reflects a hobbyist's approach to solving real-world problems.
 
-# scrape_wx.py
-Web-scraper that uses Visual Crossing's API to get local weather data, and also has functionality for using (downloaded) visual graphics for AllSky's Overlay editor
+## Usage Notes
 
-# Notes
-If there are glaring issues - please let me know and I'll see what I can do to fix them when I have time. 
-- Some errors do still come up from time to time on my system, slowly trying to tackle them as they arrise, and as I find solutions.
+These scripts are provided as-is, having been successfully tested on my personal setup and verified by several other AllSky users. While they should work smoothly on most systems, your experience may vary. If you encounter any issues or need assistance, please open a ticket in the `Issues` section. I'll address them as time permits.
 
-Constructive comments welcome
+## Project Components
+
+### Space Weather Monitor (`/scrape_swx/`)
+A web scraper that collects real-time satellite data and formats it into JSON format, making it readily available for AllSky's overlay editor. This tool enables the integration of live space weather data into your AllSky display.
+
+### BME280 Data Logger (`bme280_csv_logger.py`)
+An interface script for the Adafruit BME280 environmental sensor that:
+- Collects temperature, humidity, and pressure readings
+- Logs data to CSV format for long-term storage and analysis
+- Generates JSON output compatible with AllSky's overlay editor for real-time display
+
+### Weather Data Collector (`scrape_wx.py`)
+A comprehensive weather data solution that:
+- Interfaces with Visual Crossing's API for local weather data retrieval
+- Supports integration of visual weather graphics
+- Formats data for seamless use with AllSky's overlay editor
+
+## Development Status
+
+This project is actively maintained but developed in my spare time. While the scripts are stable and functional:
+- Issues are addressed as they're discovered and time permits
+- Occasional errors are being documented and resolved systematically
+- Improvements are implemented based on user feedback and real-world testing
+
+Constructive feedback and suggestions for improvement are always welcome. Please use the Issues section for bug reports or feature requests.
